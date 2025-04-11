@@ -1,4 +1,4 @@
-name: transformations tests
+name: tests
 
 on:
   push:
