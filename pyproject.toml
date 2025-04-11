@@ -1,5 +1,5 @@
 [project]
-name = "transformations"
+name = "r2-transformations"
 version = "0.1.0"
 description = "Library for rigid-body transformations, including velocities and forces."
 readme = "README.md"
