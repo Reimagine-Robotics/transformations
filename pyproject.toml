@@ -1,0 +1,41 @@
+[project]
+name = "transformations"
+version = "0.1.0"
+description = "Library for rigid-body transformations, including velocities and forces."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+authors = [
+    { name="Reimagine Robotics", email="info@reimaginerobotics.ai" },
+]
+dependencies = [
+    "pip >= 20.0.2",
+    "absl-py >= 0.9.0",
+    "numpy >= 1.16.0",
+]
+
+[project.urls]
+Repository = "https://github.com/Reimagine-Robotics/transformations"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.optional-dependencies]
+jax = [
+    "jax >= 0.4.13",
+]
+
+quaternion = [
+    "numpy-quaternion",
+]
+
+dev = [
+    "pyink",  # for the VS Code black formatter.
+    "jax >= 0.4.13",
+    "numpy-quaternion",
+]
